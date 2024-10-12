@@ -44,7 +44,7 @@ Please convert models before Inference.
 
 <br>
 
-### Run
+### Run Inference
 ```shell
 # Run
 cd XMem_ONNX
