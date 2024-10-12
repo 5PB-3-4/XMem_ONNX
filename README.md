@@ -34,7 +34,7 @@ git clone https://github.com/5PB-3-4/XMem_ONNX.git
 <br>
 
 ### Check Dependency Library
-Check out [requirement.txt]() file.
+Check out [requirement.txt](https://github.com/5PB-3-4/XMem_ONNX/blob/main/requirements.txt) file.
 
 <br>
 
