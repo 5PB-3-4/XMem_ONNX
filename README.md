@@ -26,7 +26,7 @@ source: https://github.com/gaomingqi/Track-Anything/tree/master/test_sample
 <br><br>
 
 ## ▼ Get Started
-### Get code
+### Get Code
 ```shell
 git clone https://github.com/5PB-3-4/XMem_ONNX.git
 ```
@@ -37,7 +37,7 @@ Check out [requirement.txt](https://github.com/5PB-3-4/XMem_ONNX/blob/main/requi
 
 <br>
 
-### Prepare Converted XMem checkpoint file
+### Prepare Converted XMem Checkpoint File
 Please convert models before Inference.
 - [convert repository](https://github.com/5PB-3-4/XMem_Export/tree/main)
 - [original pretrained checkpoint](https://github.com/hkchengrex/XMem/releases/tag/v1.0)
