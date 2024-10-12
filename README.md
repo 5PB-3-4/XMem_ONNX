@@ -40,7 +40,7 @@ Check out [requirement.txt](https://github.com/5PB-3-4/XMem_ONNX/blob/main/requi
 ### Prepare Converted XMem checkpoint file
 Please convert models before Inference.
 - [convert repository](https://github.com/5PB-3-4/XMem_Export/tree/main)
-- [original pretrained model](https://github.com/hkchengrex/XMem/releases/tag/v1.0).
+- [original pretrained checkpoint](https://github.com/hkchengrex/XMem/releases/tag/v1.0)
 
 <br>
 
