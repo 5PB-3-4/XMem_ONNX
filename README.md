@@ -9,7 +9,7 @@ This repository is the ONNX inference code for the XMem tracker model included i
 ### Demo Result
 ![result](https://github.com/5PB-3-4/XMem_ONNX/blob/main/demo/result.png)
 
-demo file link: https://github.com/gaomingqi/Track-Anything/tree/master/test_sample
+source: https://github.com/gaomingqi/Track-Anything/tree/master/test_sample
 
 <br>
 
