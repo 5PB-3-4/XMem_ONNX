@@ -1,5 +1,5 @@
 """
-This file defines XMem, the highest level nn.Module interface
+This file defines XMem, the highest level onnx interface
 During training, it is used by trainer.py
 During evaluation, it is used by inference_core.py
 
