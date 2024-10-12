@@ -4,7 +4,7 @@
 > This repogitory is work in progress.
 
 ## ▼ What's this?
-This repository is Inference code of XMem tracker model included in [Track-Anything](https://github.com/gaomingqi/Track-Anything/tree/master/tracker) from PyTorch to ONNX.
+This repository is the ONNX inference code for the XMem tracker model included in Track-Anything.
 
 ### Demo Result
 ![result](https://github.com/5PB-3-4/XMem_ONNX/blob/main/demo/result.png)
