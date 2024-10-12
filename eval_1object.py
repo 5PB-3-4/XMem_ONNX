@@ -104,8 +104,6 @@ for i in range(fn):
         # cvtImg = np.hstack((frame, cv2.cvtColor(best_mask, cv2.COLOR_GRAY2BGR)))
         # cv2.imshow("result", cv2.resize( cvtImg, dsize=(w, int(h/2)) ))
         cv2.imshow("result", painted_frame)
-        # if i==54:
-        #     cv2.imwrite("demo/result.png", cv2.resize(painted_frame, (int(w/h*640), 640)))
         if cv2.waitKey(1)==ord('q'):
             break
     except KeyboardInterrupt:
