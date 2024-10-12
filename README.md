@@ -34,16 +34,16 @@ git clone https://github.com/5PB-3-4/XMem_ONNX.git
 <br>
 
 ### Check Dependency Library
-Check out [requirement.txt](https://github.com/5PB-3-4/XMem_ONNX/blob/main/requirements.txt) file.
+Check out [requirement.txt](https://github.com/5PB-3-4/XMem_ONNX/blob/main/requirements.txt).
 
 <br>
 
 ### Prepare Converted XMem checkpoint file
 Please convert models before Inference.
 
-convert repository is [here](https://github.com/5PB-3-4/XMem_Export/tree/main)
+[convert repository](https://github.com/5PB-3-4/XMem_Export/tree/main)
 
-Original pretrained model is [here](https://github.com/hkchengrex/XMem/releases/tag/v1.0).
+ [original pretrained model](https://github.com/hkchengrex/XMem/releases/tag/v1.0).
 
 
 <br>
