@@ -8,6 +8,7 @@ This repository is the ONNX inference code for the XMem tracker model included i
 
 ### Demo Result
 ![result](https://github.com/5PB-3-4/XMem_ONNX/blob/main/demo/result.png)
+demo file link: https://github.com/gaomingqi/Track-Anything/tree/master/test_sample
 
 <br>
 
@@ -21,10 +22,7 @@ This repository is the ONNX inference code for the XMem tracker model included i
 |numpy|1.26.4|
 |opencv|4.10.0.84|
 
-demo file link: https://github.com/gaomingqi/Track-Anything/tree/master/test_sample
-
 <br><br>
-
 
 ## ▼ Get Started
 ### Get code
@@ -42,7 +40,6 @@ Check out [requirement.txt](https://github.com/5PB-3-4/XMem_ONNX/blob/main/requi
 Please convert models before Inference.
 - [convert repository](https://github.com/5PB-3-4/XMem_Export/tree/main)
 - [original pretrained model](https://github.com/hkchengrex/XMem/releases/tag/v1.0).
-
 
 <br>
 
@@ -62,5 +59,4 @@ Parser option ->
 # eval_1object.py
 _, best_mask = cv2.threshold(masks, 10, 255, cv2.THRESH_BINARY+cv2.THRESH_OTSU)
 ```
-
 
