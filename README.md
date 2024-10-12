@@ -46,12 +46,13 @@ Please convert models before Inference.
 
 ### Run
 ```shell
+# Run
 cd XMem_ONNX
 python eval_1object.py --encode_key export/XMem-encode_key.onnx --encode_value export/XMem-encode_value-m1.onnx --decode export/XMem-decode-m1.onnx
-```
 
-Parser option ->
-``` python eval_1object.py -h ```
+# Parser option
+python eval_1object.py -h
+```
 
 > [!TIP]
 > Only __one__ object can be cut from this repository. If you want to cut out multiple objects, rewrite this.
