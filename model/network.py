@@ -25,7 +25,7 @@ class XMem:
         print(f'Single object mode: {self.single_object}')
     
         self.enc_key = self.load_model(model_path["EncodeKey"], device, 3, 6)
-        self.enc_val = self.load_model(model_path["EncoderValue"], device, 5, 2)
+        self.enc_val = self.load_model(model_path["EncoderValue"], device, 6, 2)
         self.decoder = self.load_model(model_path["Decoder"], device, 6, 3)
 
     def encode_key(self, frame: np.ndarray, need_sk=True, need_ek=True): 
@@ -69,11 +69,21 @@ class XMem:
     def encode_value(self, frame: np.ndarray, image_feat_f16: np.ndarray,
                         h16: np.ndarray, masks: np.ndarray, is_deep_update=True):
         
+        num_objects = masks.shape[1]
+        others = np.zeros_like(masks)
+        if num_objects != 1:
+            others = np.concatenate([
+                np.sum(
+                    masks[:, [j for j in range(num_objects) if i!=j]]
+                , axis=1, keepdims=True)
+            for i in range(num_objects)], 1)
+        
         input_data = {
             self.enc_val["input_names"][0]: frame.astype(np.float32),
             self.enc_val["input_names"][1]: image_feat_f16.astype(np.float32),
             self.enc_val["input_names"][2]: h16.astype(np.float32),
             self.enc_val["input_names"][3]: masks.astype(np.float32),
+            self.enc_val["input_names"][3]: others.astype(np.float32),
             self.enc_val["input_names"][4]: np.array([is_deep_update], dtype=np.float32)
             }
         results = self.enc_val["session"].run(self.enc_val["output_names"], input_data)
