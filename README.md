@@ -17,11 +17,10 @@ source: https://github.com/gaomingqi/Track-Anything/tree/master/test_sample
 |name|version|
 |----|-------|
 |os|windows 10|
-|python|3.10.14|
-|uv|0.3.4|
-|onnxruntime|1.18.0|
-|numpy|1.26.4|
-|opencv|4.10.0.84|
+|cuda|11.8|
+|python|3.10.15|
+|uv|0.4.20|
+
 
 <br><br>
 
