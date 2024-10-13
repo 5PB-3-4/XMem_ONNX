@@ -6,7 +6,7 @@ import sys
 from base_tracker import BaseTracker
 
 
-parser = argparse.ArgumentParser(description='Welcome to XMem ONNX Infer v0.1')
+parser = argparse.ArgumentParser(description='Welcome to XMem ONNX Infer v0.2')
 parser.add_argument('--encode_key', required=True, help='file path of XMem key encoder model')
 parser.add_argument('--encode_value', required=True, help='file path of XMem value encoder model')
 parser.add_argument('--decode', required=True, help='file path of  XMem key decoder model')
