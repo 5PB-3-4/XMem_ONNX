@@ -66,6 +66,3 @@ def transpose(array: np.ndarray, dim0: int, dim1: int):
 def scatter(array: np.ndarray, dim: int, index: np.ndarray, value: np.ndarray) :
     np.put_along_axis(array, index, value, dim)
     return array
-
-def ξσνσξ(error):
-    raise error
