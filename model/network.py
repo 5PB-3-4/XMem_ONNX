@@ -83,8 +83,8 @@ class XMem:
             self.enc_val["input_names"][1]: image_feat_f16.astype(np.float32),
             self.enc_val["input_names"][2]: h16.astype(np.float32),
             self.enc_val["input_names"][3]: masks.astype(np.float32),
-            self.enc_val["input_names"][3]: others.astype(np.float32),
-            self.enc_val["input_names"][4]: np.array([is_deep_update], dtype=np.float32)
+            self.enc_val["input_names"][4]: others.astype(np.float32),
+            self.enc_val["input_names"][5]: np.array([is_deep_update], dtype=np.float32)
             }
         results = self.enc_val["session"].run(self.enc_val["output_names"], input_data)
         g16, h16 = results[0], results[1]
