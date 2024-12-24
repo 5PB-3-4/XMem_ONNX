@@ -55,7 +55,6 @@ python eval_1object.py -h
 
 > [!TIP]
 > Only __one__ object can be cut from this repository. If you want to cut out multiple objects, rewrite this.
-> (Or use __nightly__ repogitry for variable input shape of arrays)
 
 ```python
 # eval_1object.py
